@@ -305,6 +305,7 @@ function actualizarModalLogin(){
           if (sesion.empleado == "true") {
               $('.login-modal-footer').append("<a class='btn btn-warning' href='backend.php'>Panel de Administración</a>");
               $('.login-modal-footer').append("<a class='btn btn-warning' href='/backend'>Panel gvHIDRA</a>");
+              $('.login-modal-footer').append("<a class='btn btn-danger' href='/server/deploy.php'>Redesplegar</a>");
 
           };
        },

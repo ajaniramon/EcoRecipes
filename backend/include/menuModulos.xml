@@ -116,5 +116,6 @@ Fin de la DTD
     <opcion titulo="Gestión de clientes" descripcion="Mantenimiento de Cliente" url="phrame.php?action=Cliente__iniciarVentana"/>
     <opcion titulo="Gestión de artículos" descripcion="Mantenimiento de Articulo" url="phrame.php?action=Articulo__iniciarVentana"/>
     <opcion titulo="Gestión de categorías" descripcion="Mantenimiento de Categoria" url="phrame.php?action=Categoria__iniciarVentana"/>
+    <opcion titulo="Redesplegar" descripcion="Despliega la aplicación" url="../../server/deploy.php"/>
   </modulo>
 </menu>
