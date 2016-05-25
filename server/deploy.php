@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rmartinez
- * Date: 25/05/2016
- * Time: 16:19
- */
+
 
 $url = "http://ec2-52-28-62-178.eu-central-1.compute.amazonaws.com:8080/job/Desplegar/build?token=desplegarProduccion";
 
@@ -18,9 +13,11 @@ $result = curl_exec($ch);
 if(!curl_errno($ch)) {
     $info = curl_getinfo($ch);
     if($info['http_code'] == 201){
-        echo 1;
+        echo "Desplegando!";
+    }else if($info['http_code'] == 403){
+        echo "Fallo de autenticación... mira los permisos de Jenkins para + info.";
     }else{
-        echo 0;
+        echo "Jenkins no quiere desplegar :(";
     }
     /*echo "TIME: " . $info["total_time"] . "<br>";
     echo "STATUS: " . $info["http_code"] . "";
