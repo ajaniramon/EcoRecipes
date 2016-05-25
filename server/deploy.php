@@ -1,6 +1,6 @@
 <?php
 
-
+include_once "autorizacion.php";
 $url = "http://ec2-52-28-62-178.eu-central-1.compute.amazonaws.com:8080/job/Desplegar/build?token=desplegarProduccion";
 
 $ch = curl_init();
