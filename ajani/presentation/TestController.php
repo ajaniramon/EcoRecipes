@@ -1,5 +1,6 @@
 <?php
 namespace presentation;
+use persistence\ConnectionFactory;
 /**
  * Created by PhpStorm.
  * User: rmartinez
